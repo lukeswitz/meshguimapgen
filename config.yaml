@@ -1,0 +1,49 @@
+## format:
+##
+# zones:
+#   Your zone name:
+#     regions:
+#       - X,Y,X2,Y2  # STRING with 2 points comma separated and
+#       - X,Y,X2,Y2  # second area under the same name. not every place fits in one single square, right?
+#       - 42.2,-8.7,42.1,-8.6  # example for some area in Vigo, Spain
+#     zoom:  # optional
+#       in: 8  # Should define how close the zoom gets. More zoom implies more data to download! (paid account?)
+#       out: 1  # (defaults to 1) defines how far the zoom gets
+# map: # optional section
+#  style: map_style  # defaults to atlas
+zones:
+  Malaysia:
+    zoom:
+      out: 1
+      in: 6
+    regions:
+      - -1.653213,98.173828,8.684209,124.013672
+  Penang:
+    zoom:
+      out: 7
+      in: 13
+    regions:
+      - 5.169165,100.007172,5.568406,100.740509
+  KualaLumpur:
+    zoom:
+      out: 7
+      in: 13
+    regions:
+      - 2.759762,101.148376,3.379596,102.065735
+  Melaka:
+    zoom:
+      out: 7
+      in: 13
+    regions:
+      - 2.084711,101.977844,2.452464,102.626038
+  JbSingapore:
+    zoom:
+      out: 7
+      in: 13
+    regions:
+      - 1.151255,103.285217,1.601564,104.350891
+
+map:
+  #style: atlas  # make it make sense with your provider! (ex: atlas for thunderforest or osm-liberty for geoapify
+  style: osm-carto  # make it make sense with your provider! (ex: atlas for thunderforest or osm-liberty for geoapify
+  provider: geoapify  # valid providers: geoapify, thunderforest
