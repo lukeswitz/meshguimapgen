@@ -19,3 +19,9 @@
 - If you don't like default directory, must use env var `DOWNLOAD_DIRECTORY` (full path preferably)
 - set env var `DEBUG` if you edit this code for it not to download while testing.
 - Map style can be set in env var `MAP_STYLE`. Keep in mind if you use same directory as output dir it won't rewrite existing tiles.
+
+#Original code from:-
+https://gist.github.com/droberin/b333a216d860361e329e74f59f4af4ba
+
+I edited some of the code to load from .env 
+from dotenv import load_dotenv instead
